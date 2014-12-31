@@ -1,0 +1,23 @@
+[user]
+	name = David Hubner
+	email = 
+	signingkey =
+[branch]
+	autosetupmerge = true
+[merge]
+	log = true
+[commit]
+	template = /home/hubnerd/.commit-template
+[core]
+	editor = /usr/bin/pico
+[url "git://anongit.kde.org/"]
+	insteadOf = kde:
+[url "git@git.kde.org:"]
+	pushInsteadOf = kde:
+[sequence]
+	editor = /usr/bin/pico
+[color]
+	diff = true
+	grep = true
+[format]
+	pretty = "%ncommit %Cgreen<%H> <%cr>%nParent %P%nAuthor: %an <%ae>%nSigned: %GS %Cred<%G?>%nCommitter: %cn <%ce>%n%n%s%n%n%b"
