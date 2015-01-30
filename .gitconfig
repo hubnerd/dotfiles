@@ -15,7 +15,7 @@
 [url "git@git.kde.org:"]
 	pushInsteadOf = kde:
 [sequence]
-	editor = /usr/bin/pico
+	editor = vim
 [color]
 	diff = true
 	grep = true

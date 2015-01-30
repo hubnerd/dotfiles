@@ -1,5 +1,5 @@
 # Source
-source $HOME/.bin/zshrc.sh
+source $HOME/.zsh/git-prompt/zshrc.sh
 
 # Load
 autoload -U compinit promptinit colors

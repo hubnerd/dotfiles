@@ -16,15 +16,18 @@ set $mod Mod4
 font pango:DejaVu Sans Mono 10
 
 exec --no-startup-id feh --bg-scale ~/.backgrounds/defaultwallpaper.png
-exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id autocutsel
 exec --no-startup-id rofi -key alt+Tab
 exec --no-startup-id redshift
 exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc -CG
 
 # Windows
-for_window [class="URxvt"] border 1pixel
-for_window [class="Google-chrome"] border none
+for_window [class="Chromium"] border none
+for_window [class="mpv"] border 1pixel
+for_window [instance="urxvt"] border 1pixel
+for_window [class="Steam"] floating enable, border none
+for_window [window_role="pop-up"] floating enable, border none
+for_window [window_role="dialog"] floating enable, border none
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
