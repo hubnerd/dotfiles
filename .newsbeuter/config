@@ -1,0 +1,6 @@
+browser chromium
+player "mpg123 -C"
+download-path "/home/hubnerd/Downloads"
+refresh-on-startup yes
+auto-reload yes
+
