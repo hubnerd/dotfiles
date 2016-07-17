@@ -34,15 +34,13 @@ cpu_avg_samples 2
 TEXT
 ,[
 #Finds current volume. May need modified depending on your setup
-{"full_text": " ♪ ${exec amixer get PCM | grep -o "\[.*%\]" | tail -n 1} ", "color":"\#268BD2"},
-#Shows current user
-{"full_text": " ☻ [${exec whoami}] ", "color":"\#ff00f3"},
-#Shows hostname (heart for lack of better symbol)
-{"full_text": " ♥ [${exec hostname}] ", "color":"\#6F3BFF"},
+{"full_text": " ♪ ${exec amixer get Master | grep -o "\[.*%\]" | tail -n 1} ", "color":"\#268BD2"},
 #Shows uploadspeed
-{"full_text": " ▲ [${upspeed eth0}] ", "color":"\#ff0000"},
+{"full_text": " ▲ [${upspeed enp3s0}] ", "color":"\#ff0000"},
 #Shows downloadspeed
-{"full_text": " ▼ [${downspeed eth0}] ", "color":"\#00fff2"},
+{"full_text": " ▼ [${downspeed enp3s0}] ", "color":"\#00fff2"},
+#Shows free harddrive space
+{"full_text": " HD [${fs_bar /}] ", "color":"\#6F3BFF"},
 #Shows current memory usage with a bar
 {"full_text": " MEM [$membar] ", "color":"\#B58900"},
 #Shows current CPU usage with a bar
